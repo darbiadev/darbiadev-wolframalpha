@@ -27,6 +27,7 @@ class WolframAlphaServices:
         method: str,
         action: str,
         params: list[tuple[str, str]] = None,
+        timeout: int = 500,
     ) -> dict:
         """Make a request to WolframAlpha's API"""
         if params is None:
@@ -37,6 +38,7 @@ class WolframAlphaServices:
             "method": method,
             "url": self.base_url + action,
             "params": params,
+            "timeout": timeout,
         }
 
         response = requests.request(**args)
