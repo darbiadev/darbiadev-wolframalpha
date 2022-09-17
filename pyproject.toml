@@ -54,3 +54,8 @@ addopts = "tests -r a -v --doctest-modules src"
 
 [tool.pylint.format]
 max-line-length = 120
+
+[tool.pylint.messages_control]
+disable = "R0903"
+# justifications:
+# R0903 (too-few-public-methods) - v2 only has query endpoint
