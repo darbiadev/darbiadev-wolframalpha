@@ -1,6 +1,6 @@
 [project]
 name = "darbiadev-wolframalpha"
-version = "0.2.0"
+version = "0.3.0"
 description = "A wrapper for WolframAlpha's API"
 readme = "README.md"
 authors = [
