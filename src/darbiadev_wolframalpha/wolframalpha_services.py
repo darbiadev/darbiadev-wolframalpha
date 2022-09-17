@@ -55,11 +55,3 @@ class WolframAlphaServices:
             ("output", "JSON"),
         ]
         return self._make_request(method="GET", action="query", params=params)
-
-
-if __name__ == '__main__':
-    client = WolframAlphaServices(
-        base_url="https://api.wolframalpha.com/v2/",
-        app_id="UGEA3X-XRAY833YWQ"
-    )
-    print(client.query("1+1"))
